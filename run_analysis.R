@@ -44,7 +44,7 @@ names(train)<-c("subject","activity","test/train",names(X_train_short))##adds na
 test<-cbind(subject_test,y_test,test_index,X_test_short)
 names(test)<-c("subject","activity","test/train",names(X_test_short))
 tidy_data<-rbind(train,test)                                          ##connects the train data and test data
-write.table(tidy_data,file="tidy_data.txt",row.names=FALSE)
+write.table(tidy_data,file="Tidy Data/tidy_data.txt",row.names=FALSE)
 
 ##this is the end of part 1.
 
@@ -70,4 +70,4 @@ for(i in 1:30){                                                    ##i is an ind
 }
 
 tidy_data2<-means_matrix
-write.table(tidy_data2,file="tidy_data2.txt",row.names=FALSE)
+write.table(tidy_data2,file="Tidy Data/tidy_data2.txt",row.names=FALSE)
